@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PersonalizaJá - Sua Loja de Produtos Únicos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>PersonalizaJá</h1>
+        <nav>
+            <a href="#produtos">Produtos</a>
+            <a href="#carrinho">Carrinho (<span id="contador-carrinho">0</span>)</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="produtos">
+            <h2>Nossos Produtos Personalizáveis</h2>
+
+            <div class="produto" data-nome="Caneca Mágica" data-preco="35.00">
+                <h3>Caneca Mágica Personalizável</h3>
+                <img src="placeholder_caneca.png" alt="Caneca em branco" width="200">
+                <p>Preço: R$ <span class="preco-display">35.00</span></p>
+
+                <div class="personalizacao">
+                    <label for="texto-caneca">Texto:</label>
+                    <input type="text" id="texto-caneca" placeholder="Digite seu nome ou frase">
+                    <label for="cor-caneca">Cor da Alça:</label>
+                    <select id="cor-caneca">
+                        <option value="preta">Preta</option>
+                        <option value="branca">Branca</option>
+                        <option value="vermelha">Vermelha</option>
+                    </select>
+                </div>
+
+                <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+            </div>
+
+            </section>
+
+        <section id="carrinho">
+            <h2>Seu Carrinho</h2>
+            <ul id="lista-carrinho">
+                </ul>
+            <p>Total: R$ <span id="total-carrinho">0.00</span></p>
+            <button id="finalizar-compra" disabled>Finalizar Compra</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 PersonalizaJá. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
