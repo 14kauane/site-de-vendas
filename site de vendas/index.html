@@ -22,8 +22,9 @@
 
             <div class="produto" data-nome="Caneca Mágica" data-preco="35.00">
                 <h3>Caneca Mágica Personalizável</h3>
-                <img src="placeholder_caneca.png" alt="Caneca em branco" width="200">
+                <img src="d2cb1faac3102a76b7beb84b3b08e8ea.jpg" alt="Caneca em branco" width="200">
                 <p>Preço: R$ <span class="preco-display">35.00</span></p>
+                  <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
 
                 <div class="personalizacao">
                     <label for="texto-caneca">Texto:</label>
@@ -35,6 +36,36 @@
                         <option value="vermelha">Vermelha</option>
                     </select>
                 </div>
+                <div class="produto" data-nome="Caneca gatinho personalizada" data-preco="40.00">
+                <h3>Caneca de gatinho</h3>
+                <img src="caneca-gatinho-com-colher-personalizada-porcelana-caneca-feliz-dia-das-maes_640x640+fill_ffffff.jpg" alt="Caneca em branco" width="200">
+                <p>Preço: R$ <span class="preco-display">40.00</span></p>
+                  <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+
+                <div class="personalizacao">
+                    <label for="texto-caneca">Texto:</label>
+                    <input type="text" id="texto-caneca" placeholder="Digite seu nome ou frase">
+                    <label for="cor-caneca">Cor da Alça:</label>
+                    <select id="cor-caneca">
+                        <option value="preta">Preta</option>
+                        <option value="branca">Branca</option>
+                        <option value="rosa">rosa</option>
+                    </select>
+                </div>
+  <div class="personalizacao">
+                    <label for="texto-caneca">Texto:</label>
+                    <input type="text" id="texto-caneca" placeholder="Digite seu nome ou frase">
+                    <label for="cor-caneca">Cor do caderno:</label>
+                    <select id="cor-caneca">
+                        <option value="preta">Preto</option>
+                        <option value="branca">Branco</option>
+                        <option value="vermelha">Vermelho</option>
+                    </select>
+                </div>
+                <div class="produto" data-nome="Caneca gatinho personalizada" data-preco="49,90">
+                <h3>Caderno personalizados</h3>
+                <img src="2-673a4cde33f9af847117134806174136-1024-1024.png" alt="Caneca em branco" width="">
+                <p>Preço: R$49,90 <span class="preco-display"></span></p>
 
                 <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
             </div>
@@ -45,7 +76,7 @@
             <h2>Seu Carrinho</h2>
             <ul id="lista-carrinho">
                 </ul>
-            <p>Total: R$ <span id="total-carrinho">0.00</span></p>
+            <p>Total: R$ <span id="total-carrinho"></span></p>
             <button id="finalizar-compra" disabled>Finalizar Compra</button>
         </section>
     </main>
